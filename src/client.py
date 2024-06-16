@@ -40,21 +40,6 @@ class Client:
         self.trainloader, self.validloader, self.testloader, self.trainloader_full = self.train_val_test(
             train_dataset, list(train_idxs), test_dataset, list(test_idxs))
 
-
-        # # define optimizer
-        # if self.args.optimizer == 'sgd':
-        #     weights = dict(self.local_model.named_parameters())
-        #     lora_weights, non_lora_weights = [], []
-        #     for k in weights.keys():
-        #         if 'lora_A' in k or 'lora_B' in k:
-        #             lora_weights.append(weights[k])
-        #         else:
-        #             non_lora_weights.append(weights[k])
-        #     self.optimizer_lora = torch.optim.SGD(lora_weights, lr=self.args.lr, momentum=self.args.momentum)
-        #     self.optimizer_nonlora = torch.optim.SGD(non_lora_weights, lr=self.args.lr, momentum=self.args.momentum)
-        # else:
-        #     raise NotImplementedError
-
         # define Loss function
         self.criterion = torch.nn.CrossEntropyLoss().to(self.device)
 
