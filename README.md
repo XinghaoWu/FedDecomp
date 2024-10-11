@@ -1,6 +1,20 @@
 # Introduction
 
-This is the implementation of our paper "Decoupling General and Personalized Knowledge in Federated Learning via Additive and Low-rank Decomposition."
+This is the implementation of our paper [Decoupling General and Personalized Knowledge in Federated Learning via Additive and Low-rank Decomposition](https://arxiv.org/abs/2406.19931) (accepted by ACM MM 2024).
+
+# Citation
+
+```
+@misc{wu2024decouplinggeneralpersonalizedknowledge,
+      title={Decoupling General and Personalized Knowledge in Federated Learning via Additive and Low-Rank Decomposition}, 
+      author={Xinghao Wu and Xuefeng Liu and Jianwei Niu and Haolin Wang and Shaojie Tang and Guogang Zhu and Hao Su},
+      year={2024},
+      eprint={2406.19931},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2406.19931}, 
+}
+```
 
 # Dataset
 
